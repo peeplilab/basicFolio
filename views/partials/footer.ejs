@@ -1,0 +1,52 @@
+
+        </div>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>    </body>
+<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<a href="#"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/icsaindia"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/icsainnovations/"><i class="fab fa-instagram"></i></a><%if(!currentUser) {%><a href="/login"><i class="fas fa-users"></i></a><a href="/register"><i class="fas fa-user"></i></a><%}else{%><a href="/logout"><i class="fas fa-user-lock"></i></a><br>Signed in as <%=currentUser.username%><%}%>
+		
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Footer -->
+
+    <!-- MODAL FOR CONTACT -->
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                        <h3 class="modal-title" id="myModalLabel">contact us</h3>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                      <div class=" centered">
+                          <p>We are available 24/7, so don't hesitate to contact us.</p>
+                          <p>
+                                First floor,14-A,<br/>
+                                Collectors Colony, Chembur 400 074
+                                <br/>
+                                +91 98927 07557
+                                <br/>
+                                <a href="mailto:contact@icsa.co.in?Subject=Hello%20ICSA" target="_top"><button class="btn btn-danger">CONTACT US</button></a>
+                            </p>
+                          <div id="mapwrap">
+              <iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&height=600&hl=en&coord=19.042112,72.89243039999997&q=+(ICSA)&ie=UTF8&t=&z=15&iwloc=B&output=embed"></iframe>
+                          </div>	
+                      </div>
+                </div>
+                
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+</html>

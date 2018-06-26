@@ -1,0 +1,40 @@
+<%include partials/header%>
+<div id="blue">
+		<div class="container">
+			<div class="row centered">
+        <!-- <a href="/projects/new">Add new project</a> -->
+<br><br><br>
+				<div class="col-lg-8 ">
+				<h4>PROJECTS</h4>
+				<p>DESIGNS | FILMS | OUTREACH | RESEARCH</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+    </div><!--  bluewrap -->
+<Br>
+<DIV class="container">
+
+<div class="row text-center" >
+<% projects.forEach(function(project) { %>
+<div class="col-md-6 col-sm-12 mb-4">
+
+<div class="card" >
+    <img  style="
+    background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+
+
+    
+    " class="card-img-top"  src="<%= project.image%>">
+        <div class="card-body"><%=project.name%></div>
+        <a href="/projects/<%=project._id%>" class="btn btn-primary">KNOW MORE</a>
+
+</div>
+      
+</div>
+<%})%>
+</div>
+
+
+<%include partials/footer%>

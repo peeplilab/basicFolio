@@ -1,0 +1,112 @@
+<%include partials/header%>
+<!-- <h1>welxome to icsa</h1>
+
+<a href="/projects"> View all projects</a> -->
+
+
+<div id="headerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-6 col-lg-offset-2">
+				<h5 id="blue"> <b>Ideas for Communication and Social Action</b></h5>
+				<h2 id="r">weaving social consciousness</h2>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+    </div><!-- headerwrap -->
+    
+    <div class="container w">
+            <div class="row centered">
+                <br><br>
+                <div class="col-lg-4">
+                    <i class="fa fa-heart"></i>
+                    <h4>CREATE</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+                </div><!-- col-lg-4 -->
+    
+                <div class="col-lg-4">
+                    <i class="far fa-lightbulb"></i>
+                    <h4>INNOVATE</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+                </div><!-- col-lg-4 -->
+    
+                <div class="col-lg-4">
+                    <i class="fa fa-flask"></i>
+                    <h4>EXPERIMENT</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+                </div><!-- col-lg-4 -->
+            </div><!-- row -->
+            <br>
+            <br>
+        </div><!-- container -->
+
+        <div id="dg">
+                <div class="container">                       
+                    <h4>LATEST WORKS</h4>
+
+                    <div class="row centered">
+                        <br>
+
+                        <% projects.forEach(function(project) { %>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                            
+                            <div class="tilt" >
+                               
+                                    <a href="/projects/<%=project._id%>" class="btn btn-primary"> <img style="height:250px;width:100%;"  src="<%= project.image%>"></a>
+                            
+                            </div>
+                                  
+                            </div>
+                            <%})%>                    
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- DG -->
+
+  
+
+        <div id="lg">
+                <div class="container">
+                        <h4>OUR AWESOME CLIENTS</h4>
+
+                    <div class="row centered">
+                        <div class="col-lg-3 col-md-6 col-sm-6 ">
+                            <img src="http://nebula.wsimg.com/c13f89f843df8af6e07cca6b4137253a?AccessKeyId=33C5661592FA0C7795D2&disposition=0&alloworigin=1" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <img src="http://nebula.wsimg.com/5283de63782b971213d48b084aba81be?AccessKeyId=33C5661592FA0C7795D2&disposition=0&alloworigin=1" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <img src="http://nebula.wsimg.com/81b153123b7d906ec03e3b7b8f60b9ea?AccessKeyId=33C5661592FA0C7795D2&disposition=0&alloworigin=1" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <img src="http://nebula.wsimg.com/22da9ac06df80e49a87340ee90bc8028?AccessKeyId=33C5661592FA0C7795D2&disposition=0&alloworigin=1" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <img src="http://nebula.wsimg.com/2310b4e2b3f3be3c2399dba1661b17a1?AccessKeyId=33C5661592FA0C7795D2&disposition=0&alloworigin=1" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                <img src="http://nebula.wsimg.com/9719b5c0cd54ae76ffd9ab41d02cb83d?AccessKeyId=33C5661592FA0C7795D2&disposition=0&alloworigin=1" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                <img src="http://nebula.wsimg.com/7ba85ef6229ea7800e79c32fa91e8ea9?AccessKeyId=33C5661592FA0C7795D2&disposition=0&alloworigin=1" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                <img src="http://nebula.wsimg.com/531542bdf0da58bd090d955919e41fef?AccessKeyId=33C5661592FA0C7795D2&disposition=0&alloworigin=1" alt="">
+                        </div>
+                        
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- dg -->
+
+            <div id="r">
+                    <div class="container">
+                        <div class="row centered">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <h4>WE ARE STORYTELLERS. BRANDS ARE OUR SUBJECTS. DESIGN IS OUR VOICE.</h4>
+                                <p>We believe ideas come from everyone, everywhere. At BlackTie, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft. These truths drive us, motivate us, and ultimately help us redefine the power of design.</p>
+                            </div>
+                        </div><!-- row -->
+                    </div><!-- container -->
+                
+    
+<%include partials/footer%>
